@@ -1,0 +1,535 @@
+```css
+/* =========================================
+   ANTHORNY MOYO - ICT251 PERSONAL WEBSITE
+========================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    color: #222;
+    background: #eef2f7;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+    background: linear-gradient(
+        135deg,
+        #ff0000,
+        #ffcc00,
+        #00a651,
+        #0066ff
+    );
+    color: white;
+}
+
+.hero {
+    text-align: center;
+    padding: 75px 20px;
+    background: rgba(0, 0, 0, 0.18);
+}
+
+.welcome {
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: clamp(2.7rem, 8vw, 5.5rem);
+    letter-spacing: 4px;
+    text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.35);
+}
+
+.student-number {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    margin-top: 12px;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 15px;
+    background: #111827;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    transform: translateY(-3px);
+    background: #ffcc00;
+    color: #111;
+}
+
+
+/* =========================================
+   MAIN
+========================================= */
+
+main {
+    width: min(1150px, 94%);
+    margin: 35px auto;
+}
+
+.content-section {
+    margin: 30px 0;
+    padding: 45px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    border: 5px solid;
+}
+
+.content-section h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   ABOUT ME
+========================================= */
+
+.about-section {
+    border-color: #ff0000;
+    background: linear-gradient(135deg, #fff0f0, white);
+}
+
+.about-section h2 {
+    color: #e00000;
+}
+
+.about-card {
+    padding: 30px;
+    border-radius: 18px;
+    background: white;
+    border-left: 10px solid #ffcc00;
+}
+
+.about-card h3 {
+    color: #0066ff;
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+}
+
+
+/* =========================================
+   HOBBIES
+========================================= */
+
+.hobbies-section {
+    border-color: #00a651;
+}
+
+.hobbies-section h2 {
+    color: #008c45;
+}
+
+.hobby-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.hobby-card {
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+    min-height: 230px;
+    transition: 0.3s;
+}
+
+.hobby-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.red-card {
+    background: linear-gradient(135deg, #ff0000, #b00000);
+}
+
+.green-card {
+    background: linear-gradient(135deg, #00a651, #006b35);
+}
+
+.blue-card {
+    background: linear-gradient(135deg, #0066ff, #003c99);
+}
+
+.hobby-icon {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.hobby-card h3 {
+    margin-bottom: 10px;
+}
+
+.subheading {
+    color: #9b00ff;
+    margin-top: 30px;
+}
+
+.hobby-list {
+    margin: 15px 0 0 25px;
+}
+
+.hobby-list li {
+    margin: 8px;
+}
+
+
+/* =========================================
+   LEARNING PLAN
+========================================= */
+
+.learning-section {
+    border-color: #ffcc00;
+    background: linear-gradient(135deg, #fffbea, white);
+}
+
+.learning-section h2 {
+    color: #d99b00;
+}
+
+.learning-steps {
+    margin: 20px 0 30px 25px;
+}
+
+.learning-steps li {
+    margin: 10px 0;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+caption {
+    padding: 15px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #0066ff;
+}
+
+th {
+    background: #0066ff;
+    color: white;
+    padding: 15px;
+}
+
+td {
+    padding: 14px;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background: #eaf2ff;
+}
+
+tr:hover {
+    background: #fff1a8;
+}
+
+.external-link {
+    margin-top: 25px;
+}
+
+.external-link a {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.external-link a:hover {
+    color: #00a651;
+}
+
+
+/* =========================================
+   PHOTOS
+========================================= */
+
+.photos-section {
+    border-color: #9b00ff;
+}
+
+.photos-section h2 {
+    color: #8200d6;
+}
+
+.section-intro {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+figure {
+    overflow: hidden;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+figure:hover {
+    transform: scale(1.04);
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+figcaption {
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    color: #8200d6;
+}
+
+
+/* =========================================
+   MEDIA
+========================================= */
+
+.media-section {
+    border-color: #0066ff;
+}
+
+.media-section h2 {
+    color: #0066ff;
+}
+
+.media-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.media-card {
+    padding: 25px;
+    border-radius: 20px;
+    color: white;
+}
+
+.video-card {
+    background: linear-gradient(135deg, #ff0000, #990000);
+}
+
+.audio-card {
+    background: linear-gradient(135deg, #00a651, #006b35);
+}
+
+.media-card h3 {
+    margin-bottom: 15px;
+}
+
+video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    background: black;
+}
+
+audio {
+    width: 100%;
+    margin: 35px 0;
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact-section {
+    border-color: #ff1493;
+    background: linear-gradient(135deg, #fff0f8, white);
+}
+
+.contact-section h2 {
+    color: #d00070;
+}
+
+form {
+    max-width: 700px;
+    margin: 25px auto;
+}
+
+label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 6px;
+    color: #0066ff;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #ccd3dd;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #9b00ff;
+    box-shadow: 0 0 0 4px rgba(155, 0, 255, 0.12);
+}
+
+button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 16px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(
+        90deg,
+        #ff0000,
+        #ffcc00,
+        #00a651,
+        #0066ff
+    );
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    text-align: center;
+    color: white;
+    padding: 45px 20px;
+    background: linear-gradient(
+        135deg,
+        #ff0000,
+        #ffcc00,
+        #00a651,
+        #0066ff
+    );
+}
+
+footer h3 {
+    font-size: 1.7rem;
+    margin-bottom: 8px;
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 800px) {
+
+    .hobby-grid,
+    .photo-gallery,
+    .media-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .content-section {
+        padding: 25px 18px;
+    }
+
+    .hero {
+        padding: 50px 15px;
+    }
+
+    nav {
+        position: static;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .hero h1 {
+        font-size: 2.3rem;
+    }
+
+    .welcome {
+        font-size: 0.9rem;
+        letter-spacing: 2px;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    figure img {
+        height: 220px;
+    }
+}
+```
