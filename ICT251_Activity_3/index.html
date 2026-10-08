@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The personal portfolio of ANTHORNY MOYO, a student exploring web technologies.">
+    <title>ANTHORNY MOYO | Personal Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+<header>
+    <div class="hero">
+        <div class="welcome">WELCOME TO MY WEBSITE</div>
+        <h1>ANTHORNY MOYO</h1>
+        <p class="student-number">Student Number: 202502883</p>
+        <p class="tagline">Student • Football Fan • Music Lover • Future Web Developer</p>
+        <a class="primary-link" href="#projects">View My Projects</a>
+        <button id="themeToggle" type="button" aria-pressed="false">
+            Switch to Dark Theme
+        </button>
+    </div>
+
+    <nav aria-label="Main navigation">
+        <a href="#about">About Me</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#learning">Learning Plan</a>
+        <a href="#photos">Photos</a>
+        <a href="#media">Media</a>
+        <a href="#projects">Projects & Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <section id="about" class="content-section about-section">
+        <h2>👋 ABOUT ME</h2>
+        <div class="about-card">
+            <h3>Hello! My name is ANTHORNY MOYO</h3>
+            <p>
+                My name is ANTHORNY MOYO and I am a student who is interested in
+                learning web technologies and improving my computer skills. I enjoy
+                learning how websites are created and how HTML, CSS and JavaScript
+                can be used to create attractive and interactive web pages. In my
+                free time, I enjoy talking to my girl, watching football, especially
+                Madrid, and listening to music. I hope to continue improving my web
+                development skills and become confident in creating modern and useful
+                websites. I also want to develop my practical skills through regular
+                practice and projects that solve everyday problems.
+            </p>
+        </div>
+    </section>
+
+    <section id="hobbies" class="content-section hobbies-section">
+        <h2>🎯 MY HOBBIES</h2>
+        <div class="hobby-grid">
+            <article class="hobby-card red-card">
+                <div class="hobby-icon">❤️</div>
+                <h3>Talking to My Girl</h3>
+                <p>I enjoy conversations and sharing experiences with someone important to me.</p>
+            </article>
+
+            <article class="hobby-card green-card">
+                <div class="hobby-icon">⚽</div>
+                <h3>Watching Football</h3>
+                <p>I enjoy watching football, especially following Madrid and their matches.</p>
+            </article>
+
+            <article class="hobby-card blue-card">
+                <div class="hobby-icon">🎵</div>
+                <h3>Listening to Music</h3>
+                <p>I enjoy listening to music because it helps me relax and enjoy my free time.</p>
+            </article>
+        </div>
+
+        <h3 class="subheading">My Top 3 Hobbies</h3>
+        <ul class="hobby-list">
+            <li>Talking to my girl</li>
+            <li>Watching football — Madrid</li>
+            <li>Listening to music</li>
+        </ul>
+    </section>
+
+    <section id="learning" class="content-section learning-section">
+        <h2>📚 MY LEARNING PLAN</h2>
+        <p>My aim is to improve my web development skills through regular practice and learning.</p>
+
+        <ol class="learning-steps">
+            <li>Practise HTML and learn how to structure web pages.</li>
+            <li>Improve my CSS skills and create colourful, responsive designs.</li>
+            <li>Learn JavaScript and create interactive websites.</li>
+            <li>Build different websites to improve my practical skills.</li>
+        </ol>
+
+        <div class="table-container">
+            <table>
+                <caption>My Weekly Web Learning Plan</caption>
+                <thead>
+                    <tr><th>Day</th><th>Topic</th><th>Practice Task</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Monday</td><td>HTML</td><td>Create a structured webpage</td></tr>
+                    <tr><td>Wednesday</td><td>CSS</td><td>Style and design a webpage</td></tr>
+                    <tr><td>Friday</td><td>JavaScript</td><td>Create interactive features</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p class="external-link">
+            Learn more:
+            <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development"
+               target="_blank" rel="noopener noreferrer">MDN Web Development</a>
+        </p>
+    </section>
+
+    <section id="photos" class="content-section photos-section">
+        <h2>📸 MY PHOTO GALLERY</h2>
+        <p class="section-intro">Here are some photos representing my interests and student life.</p>
+
+        <div class="photo-gallery">
+            <figure>
+                <img src="images/photo1.jpg" alt="Personal photo of ANTHORNY MOYO">
+                <figcaption>My Personal Photo</figcaption>
+            </figure>
+            <figure>
+                <img src="images/photo2.jpg" alt="Football photo">
+                <figcaption>My Love for Football</figcaption>
+            </figure>
+            <figure>
+                <img src="images/photo3.jpg" alt="Music-related photo">
+                <figcaption>My Love for Music</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section id="media" class="content-section media-section">
+        <h2>🎬 MY MEDIA</h2>
+        <div class="media-grid">
+            <article class="media-card video-card">
+                <h3>🎥 My Introduction Video</h3>
+                <video controls preload="metadata">
+                    <source src="videos/intro.mp4" type="video/mp4">
+                    Your browser does not support video playback.
+                </video>
+                <p>This video introduces me, my programme and a web skill I hope to learn.</p>
+            </article>
+
+            <article class="media-card audio-card">
+                <h3>🎧 My Audio Clip</h3>
+                <audio controls preload="metadata">
+                    <source src="videos/voice.mp3" type="audio/mpeg">
+                    Your browser does not support audio playback.
+                </audio>
+                <p>This audio recording talks about one of my hobbies.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="projects" class="content-section projects-section">
+        <h2>💻 MY PROJECTS & SKILLS</h2>
+        <p>Explore some of the web development skills I am learning.</p>
+
+        <label for="skillSearch">Search projects or skills</label>
+        <input type="search" id="skillSearch" placeholder="Try HTML, CSS or JavaScript">
+        <button type="button" id="resetSearch" class="secondary-button">Reset Search</button>
+        <p id="searchFeedback" class="feedback" aria-live="polite">Showing all projects.</p>
+
+        <div id="projectList" class="project-grid">
+            <article class="project-card" data-search="html structure webpage semantic">
+                <h3>HTML Webpage Structure</h3>
+                <p>HTML provides the structure and content of a webpage.</p>
+                <button type="button" class="detailsToggle" aria-expanded="false"
+                        aria-controls="details-html">Show Details</button>
+                <div id="details-html" class="project-details" hidden>
+                    <p>Skills: semantic elements, headings, links, lists, tables and forms.</p>
+                </div>
+            </article>
+
+            <article class="project-card" data-search="css styling design responsive layout">
+                <h3>CSS Website Design</h3>
+                <p>CSS controls the presentation, layout and appearance of a webpage.</p>
+                <button type="button" class="detailsToggle" aria-expanded="false"
+                        aria-controls="details-css">Show Details</button>
+                <div id="details-css" class="project-details" hidden>
+                    <p>Skills: colours, typography, spacing, Flexbox, Grid and media queries.</p>
+                </div>
+            </article>
+
+            <article class="project-card" data-search="javascript interaction validation dom events">
+                <h3>JavaScript Interactivity</h3>
+                <p>JavaScript makes webpages respond to visitor actions.</p>
+                <button type="button" class="detailsToggle" aria-expanded="false"
+                        aria-controls="details-js">Show Details</button>
+                <div id="details-js" class="project-details" hidden>
+                    <p>Skills: variables, functions, events, form validation and DOM updates.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="contact" class="content-section contact-section">
+        <h2>📩 CONTACT ME</h2>
+        <p>Complete the form to see a local validation preview. No message is sent.</p>
+
+        <p class="notice">Browser demonstration only — no message is sent.</p>
+
+        <form id="contactForm" novalidate>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Enter your name" autocomplete="name" required>
+            <small id="nameError" class="field-error"></small>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email"
+                   placeholder="Enter your email" autocomplete="email" required>
+            <small id="emailError" class="field-error"></small>
+
+            <label for="topic">Topic (optional)</label>
+            <input type="text" id="topic" name="topic"
+                   placeholder="What is your message about?">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message"
+                      placeholder="Write your message here..." required></textarea>
+            <small id="messageError" class="field-error"></small>
+
+            <button type="submit">Validate & Preview</button>
+            <button type="reset" class="secondary-button">Clear Form</button>
+        </form>
+
+        <div id="formFeedback" class="feedback" role="status" aria-live="polite"></div>
+
+        <section id="contactPreview" class="preview-card" aria-labelledby="previewHeading" hidden>
+            <h3 id="previewHeading">Validated Form Preview</h3>
+            <p><strong>Name:</strong> <span id="previewName"></span></p>
+            <p><strong>Email:</strong> <span id="previewEmail"></span></p>
+            <p><strong>Topic:</strong> <span id="previewTopic"></span></p>
+            <p><strong>Message:</strong></p>
+            <p id="previewMessage"></p>
+            <p class="success-text">The data was validated in this browser. No message was sent.</p>
+        </section>
+    </section>
+</main>
+
+<footer>
+    <h3>ANTHORNY MOYO</h3>
+    <p>Student Number: 202502883</p>
+    <p>ICT251 Web Technologies</p>
+    <p><a id="sourceLink" href="#" target="_blank" rel="noopener noreferrer">View Source on GitHub</a></p>
+    <p>© 2026 ANTHORNY MOYO</p>
+</footer>
+</body>
+</html>
